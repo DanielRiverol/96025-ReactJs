@@ -149,4 +149,29 @@ const usuarios = [
     email: "user.test30@hotmail.com",
     ciudad: "Córdoba",
   },
+  {
+    id: "69f9172407e037d6ec0ad01f",
+    nombre: "Lucca Vilas",
+    email: "user.test30@hotmail.com",
+    ciudad: "Córdoba",
+  },
 ];
+// console.log(usuarios);
+const main = document.querySelector("#root");
+const container = document.createElement("div");
+const h1 = document.createElement("h1");
+
+h1.innerText = "Listado de usuarios";
+container.append(h1);
+main.append(container);
+
+usuarios.forEach((usuario) => {
+  const card = document.createElement("div");
+  card.innerHTML = `<div style="width:250px; border:1px solid; padding:1.5rem">
+        <small><strong>ID:</strong> ${usuario.id}</small>
+        <h2>${usuario.nombre}</h2>
+        <p><strong>Email:</strong> ${usuario.email}</p>
+        <p><strong>Cuidad:</strong> ${usuario.ciudad}</p>
+   </div>`;
+  container.append(card);
+});
