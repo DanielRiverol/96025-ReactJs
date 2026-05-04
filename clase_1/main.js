@@ -172,6 +172,22 @@ usuarios.forEach((usuario) => {
         <h2>${usuario.nombre}</h2>
         <p><strong>Email:</strong> ${usuario.email}</p>
         <p><strong>Cuidad:</strong> ${usuario.ciudad}</p>
+        <button onclick="alert('Hola')">Add</button>
    </div>`;
   container.append(card);
 });
+
+const changeColor = () => {
+  h1.style.color= "blue"
+};
+
+h1.addEventListener('click', changeColor)
+
+// Expresiones
+console.log(4 * 3);
+console.log(4 < 3);
+
+console.log(changeColor);
+console.log(changeColor());
+
+
