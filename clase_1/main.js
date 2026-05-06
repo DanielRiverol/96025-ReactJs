@@ -190,4 +190,6 @@ console.log(4 < 3);
 console.log(changeColor);
 console.log(changeColor());
 
-
+// PATH 
+// Chocolately
+// NVM =>Node version manager
