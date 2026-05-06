@@ -162,34 +162,31 @@ const container = document.createElement("div");
 const h1 = document.createElement("h1");
 
 h1.innerText = "Listado de usuarios";
-container.append(h1);
+container.style.display = "flex";
+container.style.flexWrap = "wrap";
+container.style.gap = "1.5rem";
+main.append(h1);
 main.append(container);
 
-usuarios.forEach((usuario) => {
-  const card = document.createElement("div");
-  card.innerHTML = `<div style="width:250px; border:1px solid; padding:1.5rem">
+// COMPONENETE
+const Card = (usuario) => {
+  
+  return `<div style="width:250px; border:1px solid; padding:1.5rem">
         <small><strong>ID:</strong> ${usuario.id}</small>
         <h2>${usuario.nombre}</h2>
         <p><strong>Email:</strong> ${usuario.email}</p>
         <p><strong>Cuidad:</strong> ${usuario.ciudad}</p>
-        <button onclick="alert('Hola')">Add</button>
+        <button onclick="alert('Hola ${usuario.nombre}')">Saludo</button>
    </div>`;
-  container.append(card);
-});
-
-const changeColor = () => {
-  h1.style.color= "blue"
 };
 
-h1.addEventListener('click', changeColor)
+usuarios.forEach((usuario) => {
+  const cardWrapper = document.createElement("div");
+  cardWrapper.innerHTML = Card(usuario)
+  container.append(cardWrapper)
+  
+});
 
-// Expresiones
-console.log(4 * 3);
-console.log(4 < 3);
 
-console.log(changeColor);
-console.log(changeColor());
 
-// PATH 
-// Chocolately
-// NVM =>Node version manager
+
