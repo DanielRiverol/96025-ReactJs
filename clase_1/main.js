@@ -189,4 +189,5 @@ usuarios.forEach((usuario) => {
 
 
 
+console.log(3 * 4);
 
