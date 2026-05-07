@@ -1,3 +1,9 @@
+import mathModule from './math.js'
+
+
+console.log(mathModule.sumar(2, 4));
+console.log(mathModule.restar(2, 4));
+
 const usuarios = [
   {
     id: "69f91724698c5210a00f61cf",

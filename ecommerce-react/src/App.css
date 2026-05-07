@@ -2,8 +2,12 @@
 
 .hero {
   position: relative;
-
+  img{ 
+    width: 200px;
+  }
   
 }
 
-
+.container{
+  border: 1px solid;
+}
