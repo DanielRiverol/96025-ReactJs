@@ -1,8 +1,9 @@
 import mathModule from './math.js'
+import './repaso.js'
 
 
-console.log(mathModule.sumar(2, 4));
-console.log(mathModule.restar(2, 4));
+// console.log(mathModule.sumar(2, 4));
+// console.log(mathModule.restar(2, 4));
 
 const usuarios = [
   {
@@ -195,5 +196,5 @@ usuarios.forEach((usuario) => {
 
 
 
-console.log(3 * 4);
+// console.log(3 * 4);
 
