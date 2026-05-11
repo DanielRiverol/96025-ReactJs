@@ -1,0 +1,11 @@
+
+  .hero {
+    position: relative;
+    img {
+      width: 600px;
+    }
+  }
+
+.backgroundContianer{
+    background-color: blue;
+}

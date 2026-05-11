@@ -1,15 +1,11 @@
-import "./App.css";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <>
-      <Hero />
-      <Hero />
-      <Hero />
-      <h1>Hola mundo</h1>
+      <h1 className="text-3xl">Hola mundo</h1>
       <section className='container'>
-        <p style={{ color: "yellow", fontSize: "1" }}>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
           hic dolores, ad placeat quos nihil dicta! Quia, ducimus. Optio
           dignissimos temporibus deserunt blanditiis voluptatum sit, eveniet
