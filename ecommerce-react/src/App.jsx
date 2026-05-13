@@ -2,6 +2,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemdetailContainer";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Sidebar></Sidebar>
           {/* Contenedor de productos */}
           <div className='h-full overflow-y-auto pr-2'>
-            <ItemListContainer text='Listado de productos' />
+            {/* <ItemListContainer text='Listado de productos' /> */}
+            <ItemDetailContainer/>
           </div>
         </section>
         <Footer></Footer>
