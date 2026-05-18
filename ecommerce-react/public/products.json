@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1",
+    "name": "Auriculares Inalámbricos",
+    "price": 45000,
+    "category": "perifericos",
+    "stock": 15,
+    "description": "Auriculares over-ear con cancelación de ruido activa.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Auriculares+Inalambricos"
+  },
+  {
+    "id": "2",
+    "name": "Teclado Mecánico RGB",
+    "price": 55000,
+    "category": "perifericos",
+    "stock": 3,
+    "description": "Teclado formato TKL con switches red ideales para programar.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Teclado+Mecanico"
+  },
+  {
+    "id": "3",
+    "name": "Mouse Gamer Inalámbrico",
+    "price": 32000,
+    "category": "perifericos",
+    "stock": 25,
+    "description": "Mouse ultraligero con sensor óptico de alta precisión.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Mouse+Gamer"
+  },
+  {
+    "id": "4",
+    "name": "Monitor 24 Full HD",
+    "price": 180000,
+    "category": "perifericos",
+    "stock": 2,
+    "description": "Monitor panel IPS a 75Hz con bordes ultradelgados.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Monitor+24+FHD"
+  },
+  {
+    "id": "5",
+    "name": "Webcam 1080p",
+    "price": 28000,
+    "category": "perifericos",
+    "stock": 40,
+    "description": "Cámara web con micrófono estéreo integrado.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Webcam+1080p"
+  },
+  {
+    "id": "6",
+    "name": "Micrófono Condensador USB",
+    "price": 65000,
+    "category": "perifericos",
+    "stock": 8,
+    "description": "Micrófono de estudio con patrón cardioide y soporte.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Microfono+USB"
+  },
+  {
+    "id": "7",
+    "name": "Mousepad XL",
+    "price": 12000,
+    "category": "accesorios",
+    "stock": 85,
+    "description": "Alfombrilla extendida para teclado y mouse de 90x40cm.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Mousepad+XL"
+  },
+  {
+    "id": "8",
+    "name": "Parlantes de Escritorio 2.0",
+    "price": 22000,
+    "category": "perifericos",
+    "stock": 12,
+    "description": "Altavoces compactos con alimentación vía USB.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Parlantes+2.0"
+  },
+  {
+    "id": "9",
+    "name": "Joystick Inalámbrico",
+    "price": 75000,
+    "category": "perifericos",
+    "stock": 6,
+    "description": "Mando compatible con PC y consolas de última generación.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Joystick"
+  },
+  {
+    "id": "10",
+    "name": "Tableta Digitalizadora",
+    "price": 48000,
+    "category": "perifericos",
+    "stock": 4,
+    "description": "Tableta gráfica ideal para diseño y anotaciones virtuales.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Tableta+Digitalizadora"
+  },
+  {
+    "id": "11",
+    "name": "Notebook Core i5",
+    "price": 850000,
+    "category": "computacion",
+    "stock": 5,
+    "description": "Laptop de 15.6 pulgadas, 16GB RAM y 512GB SSD.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Notebook+i5"
+  },
+  {
+    "id": "12",
+    "name": "Procesador Ryzen 5",
+    "price": 210000,
+    "category": "computacion",
+    "stock": 18,
+    "description": "CPU de 6 núcleos y 12 hilos, excelente rendimiento.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Ryzen+5"
+  },
+  {
+    "id": "13",
+    "name": "Memoria RAM 16GB DDR4",
+    "price": 45000,
+    "category": "computacion",
+    "stock": 50,
+    "description": "Módulo de memoria a 3200MHz con disipador.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=RAM+16GB"
+  },
+  {
+    "id": "14",
+    "name": "Disco Sólido SSD 1TB",
+    "price": 68000,
+    "category": "computacion",
+    "stock": 35,
+    "description": "Almacenamiento NVMe M.2 de alta velocidad de lectura.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=SSD+1TB"
+  },
+  {
+    "id": "15",
+    "name": "Placa de Video RTX 4060",
+    "price": 450000,
+    "category": "computacion",
+    "stock": 2,
+    "description": "GPU ideal para gaming en 1080p y tareas de diseño.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=RTX+4060"
+  },
+  {
+    "id": "16",
+    "name": "Motherboard B550",
+    "price": 140000,
+    "category": "computacion",
+    "stock": 9,
+    "description": "Placa madre compatible con procesadores AM4.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Motherboard+B550"
+  },
+  {
+    "id": "17",
+    "name": "Fuente de Alimentación 650W",
+    "price": 85000,
+    "category": "computacion",
+    "stock": 14,
+    "description": "Fuente certificada 80 Plus Bronze.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Fuente+650W"
+  },
+  {
+    "id": "18",
+    "name": "Gabinete ATX Cristal Templado",
+    "price": 95000,
+    "category": "computacion",
+    "stock": 7,
+    "description": "Gabinete con lateral transparente y 3 ventiladores RGB.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Gabinete+ATX"
+  },
+  {
+    "id": "19",
+    "name": "Cooler CPU por Aire",
+    "price": 35000,
+    "category": "computacion",
+    "stock": 22,
+    "description": "Disipador de torre con 4 heatpipes de cobre.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Cooler+CPU"
+  },
+  {
+    "id": "20",
+    "name": "Kit Refrigeración Líquida 240mm",
+    "price": 110000,
+    "category": "computacion",
+    "stock": 6,
+    "description": "Watercooling All-in-One para procesadores de alto TDP.",
+    "img": "https://placehold.co/600/2E86AB/FFFFFF/?text=Watercooling"
+  },
+  {
+    "id": "21",
+    "name": "Cable HDMI 2.1 Malla Trenzada",
+    "price": 9000,
+    "category": "accesorios",
+    "stock": 60,
+    "description": "Cable de 2 metros con soporte para 4K a 120Hz.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Cable+HDMI"
+  },
+  {
+    "id": "22",
+    "name": "Hub USB Tipo C 7 en 1",
+    "price": 35000,
+    "category": "accesorios",
+    "stock": 18,
+    "description": "Adaptador multipuerto con HDMI, USB 3.0 y lector SD.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Hub+USB+C"
+  },
+  {
+    "id": "23",
+    "name": "Brazo Articulado para Monitor",
+    "price": 55000,
+    "category": "accesorios",
+    "stock": 11,
+    "description": "Soporte de escritorio compatible con estándar VESA.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Brazo+Monitor"
+  },
+  {
+    "id": "24",
+    "name": "Funda Neoprene para Notebook 15.6",
+    "price": 15000,
+    "category": "accesorios",
+    "stock": 42,
+    "description": "Funda protectora resistente a salpicaduras.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Funda+Notebook"
+  },
+  {
+    "id": "25",
+    "name": "Cargador Rápido 65W GaN",
+    "price": 42000,
+    "category": "accesorios",
+    "stock": 25,
+    "description": "Cargador de pared compacto con puertos USB-C y USB-A.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Cargador+65W"
+  },
+  {
+    "id": "26",
+    "name": "Adaptador Bluetooth 5.0",
+    "price": 8500,
+    "category": "accesorios",
+    "stock": 70,
+    "description": "Dongle USB para dotar de Bluetooth a PCs de escritorio.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Adaptador+Bluetooth"
+  },
+  {
+    "id": "27",
+    "name": "Pasta Térmica de Alto Rendimiento",
+    "price": 12000,
+    "category": "accesorios",
+    "stock": 35,
+    "description": "Jeringa de 4 gramos, ideal para recambio de CPU/GPU.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Pasta+Termica"
+  },
+  {
+    "id": "28",
+    "name": "Kit de Limpieza Pantallas",
+    "price": 6000,
+    "category": "accesorios",
+    "stock": 55,
+    "description": "Líquido antiestático y paño de microfibra.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Kit+Limpieza"
+  },
+  {
+    "id": "29",
+    "name": "Pendrive 64GB USB 3.2",
+    "price": 11000,
+    "category": "accesorios",
+    "stock": 48,
+    "description": "Unidad flash metálica de alta transferencia de datos.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Pendrive+64GB"
+  },
+  {
+    "id": "30",
+    "name": "Tarjeta MicroSD 128GB",
+    "price": 19000,
+    "category": "accesorios",
+    "stock": 30,
+    "description": "Memoria Clase 10 ideal para cámaras y smartphones.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=MicroSD+128GB"
+  },
+  {
+    "id": "31",
+    "name": "Smart TV 43 Pulgadas",
+    "price": 380000,
+    "category": "electronica",
+    "stock": 8,
+    "description": "Televisor LED Full HD con sistema operativo Android TV.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Smart+TV+43"
+  },
+  {
+    "id": "32",
+    "name": "Tablet 10 Pulgadas",
+    "price": 150000,
+    "category": "electronica",
+    "stock": 14,
+    "description": "Tablet con 64GB de almacenamiento y batería de larga duración.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Tablet+10"
+  },
+  {
+    "id": "33",
+    "name": "Smartphone Gama Media",
+    "price": 320000,
+    "category": "electronica",
+    "stock": 16,
+    "description": "Teléfono con cámara de 64MP y pantalla AMOLED.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Smartphone"
+  },
+  {
+    "id": "34",
+    "name": "Smartwatch Deportivo",
+    "price": 45000,
+    "category": "electronica",
+    "stock": 25,
+    "description": "Reloj inteligente con monitor de ritmo cardíaco y GPS.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Smartwatch"
+  },
+  {
+    "id": "35",
+    "name": "Router Dual Band Gigabit",
+    "price": 65000,
+    "category": "electronica",
+    "stock": 12,
+    "description": "Enrutador WiFi 6 de largo alcance para el hogar.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Router+WiFi"
+  },
+  {
+    "id": "36",
+    "name": "Repetidor WiFi de Enchufe",
+    "price": 28000,
+    "category": "electronica",
+    "stock": 35,
+    "description": "Extensor de señal de red inalámbrica compacto.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Repetidor+WiFi"
+  },
+  {
+    "id": "37",
+    "name": "Cámara de Seguridad IP",
+    "price": 38000,
+    "category": "electronica",
+    "stock": 20,
+    "description": "Cámara motorizada con visión nocturna y audio bidireccional.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Camara+IP"
+  },
+  {
+    "id": "38",
+    "name": "Proyector Portátil HD",
+    "price": 190000,
+    "category": "electronica",
+    "stock": 3,
+    "description": "Mini proyector LED con conectividad inalámbrica.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Proyector"
+  },
+  {
+    "id": "39",
+    "name": "E-Reader Tinta Electrónica",
+    "price": 160000,
+    "category": "electronica",
+    "stock": 10,
+    "description": "Lector de libros digitales con luz cálida ajustable.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=EReader"
+  },
+  {
+    "id": "40",
+    "name": "Powerbank 20000mAh",
+    "price": 32000,
+    "category": "electronica",
+    "stock": 28,
+    "description": "Batería externa con soporte para carga rápida bidireccional.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Powerbank"
+  },
+  {
+    "id": "41",
+    "name": "Micrófono Corbatero",
+    "price": 14000,
+    "category": "perifericos",
+    "stock": 20,
+    "description": "Micrófono de solapa omnidireccional con clip.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Microfono+Corbatero"
+  },
+  {
+    "id": "42",
+    "name": "Soporte de Aluminio para Notebook",
+    "price": 25000,
+    "category": "accesorios",
+    "stock": 15,
+    "description": "Base elevadora ergonómica y plegable.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Soporte+Notebook"
+  },
+  {
+    "id": "43",
+    "name": "Capturadora de Video USB",
+    "price": 22000,
+    "category": "accesorios",
+    "stock": 7,
+    "description": "Adaptador HDMI a USB para streaming de cámaras o consolas.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Capturadora"
+  },
+  {
+    "id": "44",
+    "name": "Disco Externo 2TB",
+    "price": 110000,
+    "category": "accesorios",
+    "stock": 9,
+    "description": "Unidad de almacenamiento portátil HDD por USB 3.0.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Disco+Externo"
+  },
+  {
+    "id": "45",
+    "name": "Auriculares In-Ear Bluetooth",
+    "price": 24000,
+    "category": "perifericos",
+    "stock": 35,
+    "description": "Audífonos compactos tipo TWS con estuche de carga.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Auriculares+TWS"
+  },
+  {
+    "id": "46",
+    "name": "Teclado Compacto 60%",
+    "price": 49000,
+    "category": "perifericos",
+    "stock": 12,
+    "description": "Teclado mecánico ultra reducido para ganar espacio en el setup.",
+    "img": "https://placehold.co/600/FE5F55/FFFFFF/?text=Teclado+60"
+  },
+  {
+    "id": "47",
+    "name": "Silla Gamer Ergonómica",
+    "price": 250000,
+    "category": "accesorios",
+    "stock": 2,
+    "description": "Silla reclinable con soporte lumbar y cervical.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Silla+Gamer"
+  },
+  {
+    "id": "48",
+    "name": "Aro de Luz LED con Trípode",
+    "price": 18000,
+    "category": "accesorios",
+    "stock": 22,
+    "description": "Iluminación regulable de 10 pulgadas para creadores de contenido.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Aro+De+Luz"
+  },
+  {
+    "id": "49",
+    "name": "Cable de Red CAT6 5m",
+    "price": 5500,
+    "category": "accesorios",
+    "stock": 80,
+    "description": "Cable UTP armado de alta velocidad para conexiones LAN.",
+    "img": "https://placehold.co/600/5BC0EB/000000/?text=Cable+Red"
+  },
+  {
+    "id": "50",
+    "name": "Cinta LED Inteligente 5m",
+    "price": 28000,
+    "category": "electronica",
+    "stock": 18,
+    "description": "Tira LED RGB controlable por WiFi y asistentes de voz.",
+    "img": "https://placehold.co/600/A0E8AF/000000/?text=Cinta+LED"
+  }
+]

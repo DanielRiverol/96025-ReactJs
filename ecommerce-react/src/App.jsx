@@ -16,9 +16,9 @@ function App() {
           <Sidebar></Sidebar>
           {/* Contenedor de productos */}
           <div className='h-full overflow-y-auto pr-2'>
-            {/* <ItemListContainer text='Listado de productos' /> */}
+            <ItemListContainer text='Listado de productos' />
             {/* <ItemDetailContainer /> */}
-           <InputContainer/>
+           {/* <InputContainer/> */}
           </div>
         </section>
         <Footer></Footer>

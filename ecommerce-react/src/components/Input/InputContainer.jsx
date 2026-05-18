@@ -22,23 +22,22 @@ function InputContainer() {
   //   funciones manejadoras
   function handleBusqueda(texto) {
     setBusqueda(texto);
-    if (texto.trim().length < 3) {
+  }
+  //   efectos
+  useEffect(() => {
+    console.log("SE MONTA EL COMPONENTE");
+    if (busqueda.trim().length < 3) {
       setResultados([]);
       console.log("Ingresa al menos tres caracteres....");
       return;
     }
     const filtrados = productos.filter((producto) =>
-      producto.toLowerCase().includes(texto.toLowerCase()),
+      producto.toLowerCase().includes(busqueda.toLowerCase()),
     );
     // que pasa si filter esta vacio?
     // TODO
 
     setResultados(filtrados);
-  }
-  //   efectos
-  useEffect(() => {
-    console.log("SE MONTA EL COMPONENTE");
-    
   }, [busqueda]);
 
   return (
