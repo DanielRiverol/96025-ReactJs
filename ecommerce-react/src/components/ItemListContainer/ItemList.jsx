@@ -1,19 +1,16 @@
 import Item from './Item'
 
-function ItemList({productos}) {
+function ItemList({products}) {
+    // console.log(products);
+    
     return (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-6'>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
+           {
+            products.map((product)=>(
+                
+                <Item key={product.id}  {...product}/>
+            ))
+           }
         </div>
     )
 }
