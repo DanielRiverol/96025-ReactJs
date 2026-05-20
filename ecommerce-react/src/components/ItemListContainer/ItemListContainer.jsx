@@ -4,7 +4,7 @@ function ItemListContainer({ text }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/products.json")
+    fetch("/productos.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
