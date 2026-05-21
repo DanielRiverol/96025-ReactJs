@@ -14,6 +14,8 @@ function AppCopy() {
 
     setTimeout(() => {
       setIsCopied(false);
+      //   input.value = ""//no funciona por ref
+      setText("");
     }, 2000);
   };
   return (
