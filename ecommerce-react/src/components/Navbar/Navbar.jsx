@@ -1,13 +1,15 @@
 import CartWidget from "./CartWidget";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className='navbar bg-base-100 shadow-sm'>
       <div className='flex-1'>
-        <a className='btn btn-ghost text-xl'>
+        
+        <Link to={'/'} className='btn btn-ghost text-xl'>
           <img src={logo} alt='E- Commerce' className='h-10 w-auto' />
           E-commerce
-        </a>
+        </Link>
       </div>
       <div className='flex-none'>
         <div className='mr-4 '>

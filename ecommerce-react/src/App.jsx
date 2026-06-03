@@ -22,9 +22,10 @@ function App() {
             <Routes>
               <Route path='/' element={<ItemListContainer />} />
               <Route
-                path='/categories'
-                element={<h1 className='text-2xl'>Categorias </h1>}
+                path='/categories/:categoryId'
+                element={<ItemListContainer />}
               />
+
               <Route path='/items' element={<ItemDetailContainer />} />
               <Route
                 path='*'

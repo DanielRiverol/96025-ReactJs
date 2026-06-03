@@ -1,8 +1,8 @@
 import useFetch from "../../hooks/useFetch";
-
+import { Link } from "react-router-dom";
 function Sidebar() {
   const url = "https://api.npoint.io/1a84a92e16e1e82ff626";
-  
+
   const { data } = useFetch(url);
 
   return (
@@ -10,11 +10,17 @@ function Sidebar() {
       <h2 className='text-2xl font-bold mb-4'>Categorías</h2>
       <ul className='space-y-2'>
         <li>
-          <button className='btn btn-lg w-full '>Todos</button>
+          <Link to={"/"} className='btn btn-lg w-full '>
+            Todos
+          </Link>
         </li>
         {data.categories.map((cat) => (
           <li key={cat.id}>
-            <button className='btn btn-lg w-full capitalize'>{cat.name}</button>
+            <Link
+              to={`/categories/${cat.name}`}
+              className='btn btn-lg w-full capitalize'>
+              {cat.name}
+            </Link>
           </li>
         ))}
       </ul>
