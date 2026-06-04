@@ -1,5 +1,5 @@
 import useFetch from "../../hooks/useFetch";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Sidebar() {
   const url = "https://api.npoint.io/1a84a92e16e1e82ff626";
 
@@ -10,17 +10,23 @@ function Sidebar() {
       <h2 className='text-2xl font-bold mb-4'>Categorías</h2>
       <ul className='space-y-2'>
         <li>
-          <Link to={"/"} className='btn btn-lg w-full '>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `btn btn-lg w-full ${isActive ? "btn-primary" : "btn-ghost"}`
+            }>
             Todos
-          </Link>
+          </NavLink>
         </li>
         {data.categories.map((cat) => (
           <li key={cat.id}>
-            <Link
-              to={`/categories/${cat.name}`}
-              className='btn btn-lg w-full capitalize'>
+            <NavLink
+              to={`/categories/${cat.id}`}
+              className={({ isActive }) =>
+                `btn btn-lg w-full capitalize ${isActive ? "btn-primary" : "btn-ghost"}`
+              }>
               {cat.name}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

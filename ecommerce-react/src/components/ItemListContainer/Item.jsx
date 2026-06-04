@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Item({ id, name, price, img, description }) {
   return (
     <div className='card bg-base-100 w-96 shadow-sm'>
@@ -19,7 +21,9 @@ function Item({ id, name, price, img, description }) {
 
         <div className='card-actions w-full flex justify-between items-center mt-4'>
           <span className='text-xl font-bold text-primary'>${price}</span>
-          <button className='btn btn-primary'>Ver detalle</button>
+          <Link to={`/items/${id}`} className='btn btn-primary'>
+            Ver detalle
+          </Link>
         </div>
       </div>
     </div>

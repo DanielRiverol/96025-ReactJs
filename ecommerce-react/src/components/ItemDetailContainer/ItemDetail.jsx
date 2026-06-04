@@ -1,29 +1,35 @@
 import { useRef } from "react";
 import ItemCount from "./ItemCount";
 
-function ItemDetail() {
+function ItemDetail({product}) {
+console.log(product);
+
+
   const modalRef = useRef(null);
   const handelOnAdd = () => {
     modalRef.current.showModal();
   };
   return (
+// render condicional
+// !product 
+
     <>
       <div className='flex justify-center items-center py-10'>
         <div className='card lg:card-side w-full max-w-3xl bg-base-100 shadow-sm border border-base-200'>
           <figure className='lg:w-96'>
             <img
               className='h-full w-full object-cover'
-              src='https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp'
+              src={product?.img}
               alt='Producto'
             />
           </figure>
 
           <div className='card-body'>
-            <h2 className='card-title text-2xl'>Producto 1</h2>
+            <h2 className='card-title text-2xl'>{product?.name}</h2>
 
-            <p className='text-base-content/70'>Descripción del producto</p>
+            <p className='text-base-content/70'>{product?.description}</p>
 
-            <p className='text-3xl font-bold'>$12000</p>
+            <p className='text-3xl font-bold'>${product?.price}</p>
 
             <div className='card-actions justify-end mt-4'>
               <ItemCount onAdd={handelOnAdd} />
@@ -32,13 +38,13 @@ function ItemDetail() {
         </div>
       </div>
 
-      <dialog ref={modalRef} class='modal'>
-        <div class='modal-box'>
-          <h3 class='text-lg font-bold'>Producto agregado: Producto 1 </h3>
-          <p class='py-4'>Press ESC key or click the button below to close</p>
-          <div class='modal-action'>
+      <dialog ref={modalRef} className='modal'>
+        <div className='modal-box'>
+          <h3 className='text-lg font-bold'>Producto agregado: Producto 1 </h3>
+          <p className='py-4'>Press ESC key or click the button below to close</p>
+          <div className='modal-action'>
             <form method='dialog'>
-              <button class='btn'>Close</button>
+              <button className='btn'>Close</button>
             </form>
           </div>
         </div>
