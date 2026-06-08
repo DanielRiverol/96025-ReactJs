@@ -1,17 +1,17 @@
 import { useRef } from "react";
 import ItemCount from "./ItemCount";
 
-function ItemDetail({product}) {
-console.log(product);
-
+function ItemDetail({ product, addToCart }) {
+  // console.log(product);
 
   const modalRef = useRef(null);
-  const handelOnAdd = () => {
-    modalRef.current.showModal();
+  const handelOnAdd = (count) => {
+    // modalRef.current.showModal();
+    addToCart(product, count);
   };
   return (
-// render condicional
-// !product 
+    // render condicional
+    // !product
 
     <>
       <div className='flex justify-center items-center py-10'>
@@ -41,7 +41,9 @@ console.log(product);
       <dialog ref={modalRef} className='modal'>
         <div className='modal-box'>
           <h3 className='text-lg font-bold'>Producto agregado: Producto 1 </h3>
-          <p className='py-4'>Press ESC key or click the button below to close</p>
+          <p className='py-4'>
+            Press ESC key or click the button below to close
+          </p>
           <div className='modal-action'>
             <form method='dialog'>
               <button className='btn'>Close</button>
