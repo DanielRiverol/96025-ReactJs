@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemdetailContainer";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -27,10 +28,7 @@ function App() {
               />
 
               <Route path='/items/:id' element={<ItemDetailContainer />} />
-              <Route
-                path='*'
-                element={<h1 className='text-2xl'>404 NOT FOUND </h1>}
-              />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
         </section>

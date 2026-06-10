@@ -1,18 +1,24 @@
 import { useRef } from "react";
 import ItemCount from "./ItemCount";
 
-function ItemDetail({product}) {
-console.log(product);
-
-
+function ItemDetail({ product }) {
   const modalRef = useRef(null);
   const handelOnAdd = () => {
     modalRef.current.showModal();
   };
-  return (
-// render condicional
-// !product 
 
+  if (!product) {
+    return (
+      <div className='hero h-full'>
+        <div className='hero-content text-center'>
+          <div className='max-w-lg'>
+            <h2 className='text-3xl font-bold mt-4'>Producto inexistente</h2>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return (
     <>
       <div className='flex justify-center items-center py-10'>
         <div className='card lg:card-side w-full max-w-3xl bg-base-100 shadow-sm border border-base-200'>
@@ -41,7 +47,9 @@ console.log(product);
       <dialog ref={modalRef} className='modal'>
         <div className='modal-box'>
           <h3 className='text-lg font-bold'>Producto agregado: Producto 1 </h3>
-          <p className='py-4'>Press ESC key or click the button below to close</p>
+          <p className='py-4'>
+            Press ESC key or click the button below to close
+          </p>
           <div className='modal-action'>
             <form method='dialog'>
               <button className='btn'>Close</button>
