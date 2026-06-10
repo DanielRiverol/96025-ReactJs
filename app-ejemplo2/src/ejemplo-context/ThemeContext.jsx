@@ -1,6 +1,8 @@
-import { useState } from "react";
-import SeccionLateral from "./SeccionLateral";
-function App() {
+import { createContext, useState } from "react";
+
+export const ThemeContext = createContext();
+
+export function ThemeProvider({ children }) {
   const [tema, setTema] = useState("claro");
   const cambiarTema = () => {
     setTema((prev) => (prev === "claro" ? "oscuro" : "claro"));
@@ -12,13 +14,10 @@ function App() {
     color: tema === "claro" ? "#000000" : "#ffffff",
     transition: "all 0.3s ease",
   };
+
   return (
-    <div style={estiloGlobal}>
-      <h1 style={{fontSize:"2.5rem"}}>Ejemplo Prop Drilling</h1>
-      <p>El tema seleccionado es: {tema.toUpperCase()}</p>
-      <SeccionLateral tema={tema} cambiarTema={cambiarTema} />
-    </div>
+    <ThemeContext.Provider value={{ tema, cambiarTema }}>
+      <div style={estiloGlobal}>{children}</div>
+    </ThemeContext.Provider>
   );
 }
-
-export default App;
