@@ -29,7 +29,7 @@ function ItemCount({onAdd}) {
         </button>
       </div>
       <button
-        onClick={onAdd}
+        onClick={()=> onAdd(count)}
         className='btn btn-primary w-full'>
         Agregar al carrito
       </button>
