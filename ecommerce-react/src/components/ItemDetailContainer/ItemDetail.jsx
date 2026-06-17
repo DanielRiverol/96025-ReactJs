@@ -6,7 +6,7 @@ function ItemDetail({ product }) {
   const { addToCart } = useCart();
   const modalRef = useRef(null);
   const handelOnAdd = (count) => {
-    // modalRef.current.showModal();
+    modalRef.current.showModal();
     addToCart(product, count);
   };
 
@@ -49,13 +49,13 @@ function ItemDetail({ product }) {
 
       <dialog ref={modalRef} className='modal'>
         <div className='modal-box'>
-          <h3 className='text-lg font-bold'>Producto agregado: Producto 1 </h3>
-          <p className='py-4'>
-            Press ESC key or click the button below to close
-          </p>
+          <h3 className='text-lg font-bold'>
+            Agregaste {product?.name}
+          </h3>
+          
           <div className='modal-action'>
             <form method='dialog'>
-              <button className='btn'>Close</button>
+              <button className='btn'>Cerrar</button>
             </form>
           </div>
         </div>

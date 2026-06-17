@@ -1,4 +1,4 @@
-import { Youtube, Tiktok, TwitterX } from "@boxicons/react";
+import { Youtube, Tiktok, Instagram } from "@boxicons/react";
 import logo from "../../assets/logo.svg";
 function Footer() {
   return (
@@ -8,8 +8,8 @@ function Footer() {
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
-        <a href='#'>
-          <TwitterX />
+        <a href="#" className='rounded-lg bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600'>
+          <Instagram color='white' />
         </a>
         <a href='#'>
           <Tiktok />
