@@ -5,35 +5,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemdetailContainer";
+import Cart from "./components/Cart/Cart";
 import NotFound from "./components/NotFound/NotFound";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
-  // Funcionalidad carrito
-  // inicializar del carrito
-  const [cart, setCart] = useState([]);
-
-  // agregar al carrito
-  const addToCart = (product, quantity) => {
-    setCart((prevCart) => {
-      const existigProduct = prevCart.find((item) => item?.id === product?.id);
-      if (existigProduct) {
-        return prevCart.map((item) => {
-         return item?.id === product?.id
-            ? { ...item, quantity: item?.quantity + quantity }
-            : item;
-        });
-      }
-      return [...prevCart, { ...product, quantity }];
-    });
-  };
-  // calculamos el total de los productos agregados
-  const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
-
   return (
-    <>
+    <CartProvider>
       <main className='h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden bg-base-100'>
         {/* Navbar */}
-        <Navbar totalQuantity={totalQuantity} />
+        <Navbar />
         {/* Contendor principal */}
         <section className='grid grid-cols-[200px_1fr] gap-4 p-4 overflow-hidden'>
           {/* Sidebar */}
@@ -49,6 +30,7 @@ function App() {
               />
 
               <Route path='/items/:id' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<Cart />} />
               <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
@@ -56,7 +38,7 @@ function App() {
         {/* Footer */}
         <Footer />
       </main>
-    </>
+    </CartProvider>
   );
 }
 
