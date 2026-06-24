@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemdetailContainer";
 import Cart from "./components/Cart/Cart";
+import CheckOutForm from "./components/ItemDetailContainer/CheckOut/CheckOutForm";
 import NotFound from "./components/NotFound/NotFound";
 import { CartProvider } from "./context/CartContext";
 
@@ -31,6 +32,7 @@ function App() {
 
               <Route path='/items/:id' element={<ItemDetailContainer />} />
               <Route path='/cart' element={<Cart />} />
+              <Route path="/checkout" element={<CheckOutForm/>}/>
               <Route path='*' element={<NotFound />} />
             </Routes>
           </div>

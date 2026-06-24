@@ -1,10 +1,7 @@
-import useFetch from "../../hooks/useFetch";
 import { useCategories } from "../../hooks/useFirebase";
 import { Link, NavLink } from "react-router-dom";
 function Sidebar() {
-  const url = "https://api.npoint.io/1a84a92e16e1e82ff626";
-
-  const { data } = useFetch(url);
+  
   const {categories} = useCategories()
 
   return (

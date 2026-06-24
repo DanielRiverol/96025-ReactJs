@@ -2,7 +2,7 @@ import { useRef } from "react";
 import ItemCount from "./ItemCount";
 import { useCart } from "../../context/CartContext";
 function ItemDetail({ product }) {
-  // console.log(product);
+  console.log(product);
   const { addToCart } = useCart();
   const modalRef = useRef(null);
   const handelOnAdd = (count) => {

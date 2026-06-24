@@ -11,6 +11,7 @@ import { db } from "../services/firebaseConfig.js";
 
 export const useProducts = (categoryId) => {
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     // los productos de la coleccion products
     const productsRef = collection(db, "products");
@@ -22,7 +23,7 @@ export const useProducts = (categoryId) => {
     // traer los docs de la coleccion
     getDocs(consulta).then((resp) => {
       const data = resp.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      console.log(data);
+
       setProducts(data);
     });
   }, [categoryId]);
@@ -37,12 +38,58 @@ export const useCategories = () => {
     // traer los docs de la coleccion
     getDocs(categoriesRef).then((resp) => {
       const data = resp.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      console.log(data);
+      // console.log(data);
       setCategories(data);
     });
   }, []);
   return { categories };
 };
 
+// TODO: crear un Hook que traiga un solo documento product
+// export const useProductById = (id) => {
+//   // product
+//   const [product, setProduct] = useState(null);
 
-// crear un Hook que traiga un solo documento product 
+//   console.log(product);
+
+//   useEffect(() => {
+//     // busca un documento en la coleccion
+//     const docRef = doc(db, "products", id);
+//     console.log("Documeto prod:", docRef);
+
+//     getDoc(docRef)
+//       .then((resp) => {
+//         if (resp.exists()) {
+//           setProduct({ id: resp.id, ...resp.data() });
+//         } else {
+//           setProduct(null); // Producto no encontrado
+//         }
+//       })
+//       .catch((error) => console.error("Error fetching product:", error));
+
+    
+//   }, [id]);
+//   return { product };
+// };
+export const useProductById = (id) => {
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    const docRef = doc(db, "products", id);
+
+    getDoc(docRef)
+      .then((resp) => {
+        if (resp.exists()) {
+          setProduct({ id: resp.id, ...resp.data() });
+        } else {
+          setProduct(null); // Producto no encontrado
+        }
+      })
+      .catch((error) => console.error("Error fetching product:", error))
+      .finally(() => setLoading(false));
+  }, [id]);
+
+  return { product, loading };
+};
