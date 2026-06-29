@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 
-// Recibe la información cruda y los controladores desde App.jsx
-// function Cart({ cart, removeFromCart, clearCart }) {
 function Cart() {
   const { cart, removeFromCart, clearCart } = useCart();
   // Calculamos el valor de la orden total
@@ -11,7 +9,7 @@ function Cart() {
     0,
   );
 
-  // Interfaz limpia en caso de que no haya elementos seleccionados
+  
   if (cart.length === 0) {
     return (
       <div className='p-4 max-w-4xl mx-auto text-center mt-10'>
@@ -30,7 +28,6 @@ function Cart() {
     <div className='p-4 max-w-4xl mx-auto'>
       <h1 className='text-3xl font-bold mb-6'>Tu Compra</h1>
 
-      {/* Mapeo dinámico del estado del carrito */}
       <div className='flex flex-col gap-4'>
         {cart.map((item) => (
           <div
@@ -50,7 +47,6 @@ function Cart() {
             <div className='mx-4 font-bold text-lg text-primary'>
               ${item.price * item.quantity}
             </div>
-            {/* El botón ejecuta selectivamente la eliminación pasándole el id */}
             <button
               onClick={() => removeFromCart(item.id)}
               className='btn btn-error btn-sm'>
@@ -65,7 +61,7 @@ function Cart() {
       <div className='flex justify-between items-center mt-4'>
         <h2 className='text-2xl font-bold'>Total: ${totalCost}</h2>
         <div className='flex gap-2'>
-          {/* El botón de vaciar ejecuta la limpieza general */}
+         
           <button onClick={clearCart} className='btn btn-outline btn-error'>
             Vaciar
           </button>
